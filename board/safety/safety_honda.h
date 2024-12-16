@@ -177,7 +177,7 @@ static void honda_rx_hook(const CANPacket_t *to_push) {
     }
 
     // exit controls once main or cancel are pressed
-    if ((button == HONDA_BTN_MAIN) && (cruise_button_prev != HONDA_BTN_MAIN)) {
+    if ((button == HONDA_BTN_MAIN) && (cruise_button_prev != button)) {
       disengageFromBrakes = false;
       controls_allowed = false;
       controls_allowed_long = false;
