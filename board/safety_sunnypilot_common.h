@@ -8,7 +8,7 @@ void mads_acc_main_check(const bool main_on) {
   if (!main_on && acc_main_on_prev) {
     disengageFromBrakes = false;
     controls_allowed = false;
-    controls_allowed_long = false;
+    //controls_allowed_long = false;
   }
   acc_main_on_prev = main_on;
 }
