@@ -157,7 +157,7 @@ static void honda_rx_hook(const CANPacket_t *to_push) {
 
   // check ACC main state
   // 0x326 for all Bosch and some Nidec, 0x1A6 for some Nidec
-  if ((addr == 0x1A6)) {
+  if (addr == 0x1A6) {
     acc_main_on = GET_BIT(to_push, ((addr == 0x326) ? 28U : 47U));
     mads_acc_main_check(acc_main_on);
   }
