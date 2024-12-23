@@ -23,7 +23,7 @@ void mads_lkas_button_check(const bool lkas_pressed) {
 void mads_exit_controls_check(void) {
   if (alternative_experience & ALT_EXP_MADS_DISABLE_DISENGAGE_LATERAL_ON_BRAKE) {
     disengageFromBrakes = true;
-  　controls_allowed_long = false;
+    controls_allowed_long = false;
   } else {
     if ((alternative_experience & ALT_EXP_ENABLE_MADS) && controls_allowed) {
       disengageFromBrakes = true;
