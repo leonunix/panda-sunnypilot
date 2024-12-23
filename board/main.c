@@ -224,7 +224,7 @@ void tick_handler(void) {
         if (heartbeat_engaged_mismatches >= 3U) {
           disengageFromBrakes = false;
           controls_allowed = false;
-          //controls_allowed_long = false;
+          controls_allowed_long = false;
         }
       } else {
         heartbeat_engaged_mismatches = 0U;
